@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ccm-website/static/css/main.516c1ea5.css",
+    "main.js": "/ccm-website/static/js/main.cb15afcc.js",
+    "static/js/453.7327f78f.chunk.js": "/ccm-website/static/js/453.7327f78f.chunk.js",
+    "static/media/Doctor_Image.jpg": "/ccm-website/static/media/Doctor_Image.885e95d5907654cd5505.jpg",
+    "index.html": "/ccm-website/index.html",
+    "main.516c1ea5.css.map": "/ccm-website/static/css/main.516c1ea5.css.map",
+    "main.cb15afcc.js.map": "/ccm-website/static/js/main.cb15afcc.js.map",
+    "453.7327f78f.chunk.js.map": "/ccm-website/static/js/453.7327f78f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.516c1ea5.css",
+    "static/js/main.cb15afcc.js"
+  ]
+}
