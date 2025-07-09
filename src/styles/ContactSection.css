@@ -1,0 +1,263 @@
+/* -------------------------
+   Layout & Section
+------------------------- */
+.contact-demo-section {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.contact-demo-container {
+  display: flex;
+  flex-direction: row; /* <-- Change from row-reverse to row */
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+  min-height: 540px;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------
+   Image Column
+------------------------- */
+.contact-demo-image-col {
+  flex: 1;
+  min-width: 0;
+  min-height: 540px;
+  background: url('./Doctor_Image.jpg') center center/cover no-repeat;
+  border-radius: 2rem 0 0 2rem;
+  height: 100%;
+}
+
+.contact-demo-image {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+
+/* -------------------------
+   Form Column & Box
+------------------------- */
+.contact-demo-form-col {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-demo-form {
+  background: #fff;
+  border-radius: 4rem;
+  box-shadow: 0 8px 32px rgba(30, 64, 175, 0.10);
+  padding: 2.5rem 2rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-demo-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+}
+
+/* -------------------------
+   Fields & Inputs
+------------------------- */
+.contact-demo-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-demo-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-demo-field label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.contact-demo-field label span {
+  color: #e11d48;
+  margin-left: 0.1em;
+}
+
+.contact-demo-field input,
+.contact-demo-field select {
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  border: 1.5px solid #e5e7eb;
+  background: #f8fafc;
+  font-size: 1rem;
+  color: #222;
+  font-family: inherit;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.contact-demo-field input:focus,
+.contact-demo-field select:focus {
+  border-color: #0074b8;
+  box-shadow: 0 0 0 2px #0074b822;
+}
+
+/* -------------------------
+   Submit Button
+------------------------- */
+.contact-demo-submit {
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: 1rem 0;
+  background: #e11d48;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.08);
+}
+
+.contact-demo-submit:hover,
+.contact-demo-submit:focus {
+  background: #b91c1c;
+  box-shadow: 0 4px 16px rgba(225, 29, 72, 0.13);
+}
+
+/* -------------------------
+   Decorative Wave (Bottom)
+------------------------- */
+.contact-demo-wave::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 1440 260" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 120C180 220 420 220 720 120C1020 20 1260 20 1440 120V260H0V120Z" fill="%230088c6"/></svg>') no-repeat bottom center / cover;
+}
+
+.contact-demo-wave-svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 200px; /* Match the SVG height */
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* -------------------------
+   Responsive Styles
+------------------------- */
+@media (max-width: 1024px) {
+  .contact-demo-container {
+    flex-direction: column;
+  }
+  .contact-demo-image-col {
+    border-radius: 2rem 2rem 0 0;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-demo-container {
+    padding: 1.2rem 0.2rem 0;
+    gap: 1.5rem;
+  }
+
+  .contact-demo-form {
+    padding: 1.2rem 0.7rem 1rem;
+    border-radius: 1.2rem;
+    max-width: 100%;
+  }
+
+  .contact-demo-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-demo-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-demo-image {
+    max-width: 100%;
+    border-radius: 1.2rem;
+  }
+
+  .contact-demo-wave {
+    height: 90px;
+    border-top-left-radius: 60px 20px;
+    border-top-right-radius: 60px 20px;
+  }
+}
+
+/* Make the top or bottom wave in the contact section bigger */
+.contact-section__wave {
+  height: 180px;           /* Increase the height of the wave */
+  min-height: 120px;
+  max-height: 240px;
+  width: 100%;
+  display: block;
+  background-size: 100% 100% !important;
+}
+
+/* If you use a pseudo-element for the wave (example for ::before or ::after) */
+.contact-section::before,
+.contact-section::after {
+  height: 180px !important;   /* Or your desired larger value */
+  min-height: 120px;
+  max-height: 240px;
+  background-size: 100% 100% !important;
+}
+.contact-demo-section {
+  min-height: 1;
+  padding-top: 4rem;
+  padding-bottom: 0.125rem !important;
+}
+.contact-demo-container {
+  max-width: 1200px;
+  min-height: 3;
+  padding: 0;
+  gap: 0;
+}
+.contact-demo-form {
+  padding: 2.5rem 2rem;
+  max-width: 340px;
+  border-radius: 4rem;
+}
