@@ -1,12 +1,4 @@
-// src/components/HeroSection.js
-import React from 'react';
 import '../styles/HeroSection.css';
-
-const avatars = [
-  '/avatars/user1.jpg',
-  '/avatars/user2.jpg',
-  '/avatars/user3.jpg'
-];
 
 const HeroSection = () => (
   <section className="hero-section">
@@ -49,7 +41,7 @@ const HeroSection = () => (
       <div className="hero-right">
         <div className="hero-patient-media">
           <video
-            src="/Video.mp4"
+            src="./video.mp4"
             className="hero-patient-video"
             autoPlay
             loop

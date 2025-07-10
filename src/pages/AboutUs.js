@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/AboutUs.css';
@@ -8,11 +7,11 @@ const MeshGradient = () => {
 };
 
 const AboutUs = () => {
-  const fadeInUp = {
-    initial: { y: 30, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-    transition: { duration: 0.5, ease: "easeOut" }
-  };
+  // const fadeInUp = {
+  //   initial: { y: 30, opacity: 0 },
+  //   animate: { y: 0, opacity: 1 },
+  //   transition: { duration: 0.5, ease: "easeOut" }
+  // };
 
   return (
     <div className="about-page">
